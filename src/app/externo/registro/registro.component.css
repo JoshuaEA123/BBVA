@@ -1,0 +1,64 @@
+body {
+    background: darkred;
+    /* background-size: 100%; */
+    /* background-attachment: fixed; */
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+form {
+    width: 450px;
+    background: rgba(14, 14, 14, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 300px;
+    min-height: 300px;
+}
+
+#boton {
+    border-radius: 8px;
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+}
+
+#boton:hover {
+    cursor: pointer;
+    background: rgb(122, 1, 1);
+}

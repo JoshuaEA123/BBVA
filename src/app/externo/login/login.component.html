@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Formulario login</title>
+</head>
+
+<body>
+    <form action="">
+        <h2>Iniciar sesión</h2>
+        <input type="text" placeholder=" Usuario" [(ngModel)]="usuario.dni" name="usuario.dni">
+        <input type="password" placeholder="&#128272; Contraseña" [(ngModel)]="usuario.password" name="usuario.password">
+        <input type="submit" value="Ingresar" (click)="Ingresar(usuario)">
+        <input type="button" value="Registrar" [routerLink]="['/registro']">
+    </form>
+</body>
+
+
+</html>
+<app-loading *ngIf="loading"></app-loading>
+<app-alerta1 (cerrarAlerta)="CerrarAlerta($event)" [cerrar]="cerrar" *ngIf="cerrar"></app-alerta1>

@@ -1,0 +1,33 @@
+#circle {
+    /* background-color: rgba(25, 25, 25, 0.6); */
+    top: 45%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+}
+
+.loader {
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    border: 8px solid #162534;
+    border-top: 8px solid rgb(23, 155, 179);
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fondo-loading {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(82, 80, 83, 0.5);
+    position: fixed;
+}
